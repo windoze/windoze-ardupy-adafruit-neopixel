@@ -5,7 +5,7 @@
 #include "py/obj.h"
 #include "shared-bindings/util.h"
 
-void common_hal_adafruit_neopixel_construct(abstract_module_t * self, uint32_t pin_ctrl);
+void common_hal_adafruit_neopixel_construct(abstract_module_t * self, uint32_t pin_ctrl, uint32_t n);
 void common_hal_adafruit_neopixel_deinit(abstract_module_t * self);
 void common_hal_adafruit_neopixel_set_color(abstract_module_t * self, uint32_t pixel, uint32_t color);
 void common_hal_adafruit_neopixel_show(abstract_module_t * self);
