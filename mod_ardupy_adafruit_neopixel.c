@@ -13,7 +13,7 @@ void common_hal_adafruit_neopixel_show(abstract_module_t * self);
 extern const mp_obj_type_t adafruit_neopixel_type;
 
 m_generic_make(adafruit_neopixel) {
-    enum { ARG_clk, ARG_dat,  };
+    enum { ARG_pin, ARG_num,  };
     static const mp_arg_t allowed_args[] = {
         { MP_QSTR_pin,  MP_ARG_INT ,{.u_int = -1}},
         { MP_QSTR_num,  MP_ARG_INT ,{.u_int = -1}},
@@ -23,7 +23,7 @@ m_generic_make(adafruit_neopixel) {
     mp_arg_check_num(n_args, n_kw, 2, 2, false);
     mp_arg_parse_all_kw_array(n_args, n_kw, args, MP_ARRAY_SIZE(allowed_args), allowed_args, vals);
 
-    common_hal_adafruit_neopixel_construct(self, vals[ARG_pin].u_int, vals[ARG_dat].u_int);
+    common_hal_adafruit_neopixel_construct(self, vals[ARG_pin].u_int, vals[ARG_num].u_int);
     return self;
 }
 

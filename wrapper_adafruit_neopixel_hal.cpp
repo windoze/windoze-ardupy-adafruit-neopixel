@@ -12,7 +12,7 @@ void * operator new(size_t, void *);
 
 extern "C"{
     void common_hal_adafruit_neopixel_construct(abstract_module_t * self, uint32_t pin_ctrl, uint32_t n){
-        self->module = new(m_new_obj(Adafruit_NeoPixel))(Adafruit_NeoPixel(n, pin_ctrl));
+        self->module = new(m_new_obj(Adafruit_NeoPixel)) Adafruit_NeoPixel(n, pin_ctrl);
         neopixel.begin();
     }
     void common_hal_adafruit_neopixel_deinit(abstract_module_t * self){
