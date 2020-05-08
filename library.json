@@ -1,0 +1,12 @@
+{
+    "name": "Windoze ArduPy Adafruit NeoPixel ",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/windoze/windoze-ardupy-adafruit-neopixel.git"
+    },
+    "dependencies": [{
+        "name": "Adafruit_NeoPixel",
+        "url": "https://github.com/adafruit/Adafruit_NeoPixel.git"
+    }]
+}
