@@ -60,10 +60,11 @@ const mp_rom_map_elem_t adafruit_neopixel_locals_dict_table[] = {
     { MP_ROM_QSTR(MP_QSTR_show),            MP_ROM_PTR(&adafruit_neopixel_show_obj) },
 };
 
+MP_DEFINE_CONST_DICT(adafruit_neopixel_locals_dict, adafruit_neopixel_locals_dict_table);
 const mp_obj_type_t adafruit_neopixel_type = {
     {&mp_type_type},
     .name = MP_QSTR_adafruit_neopixel,
     .make_new = adafruit_neopixel_make_new,
-    .locals_dict = (mp_obj_t)&adafruit_neopixel_locals_dict_table,
+    .locals_dict = (mp_obj_t)&adafruit_neopixel_locals_dict,
     .attr = &adafruit_neopixel_obj_attr,
 };
