@@ -13,10 +13,10 @@ void common_hal_adafruit_neopixel_show(abstract_module_t * self);
 extern const mp_obj_type_t adafruit_neopixel_type;
 
 m_generic_make(adafruit_neopixel) {
-    enum { ARG_pin, ARG_num,  };
+    enum { ARG_pin, ARG_num, };
     static const mp_arg_t allowed_args[] = {
-        { MP_QSTR_pin,  MP_ARG_INT ,{.u_int = -1}},
-        { MP_QSTR_num,  MP_ARG_INT ,{.u_int = -1}},
+        { MP_QSTR_pin,  MP_ARG_INT ,{.u_int = 1}},
+        { MP_QSTR_num,  MP_ARG_INT ,{.u_int = 10}},
     };
     abstract_module_t * self = new_abstruct_module(type);
     mp_arg_val_t        vals[MP_ARRAY_SIZE(allowed_args)];
