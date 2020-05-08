@@ -7,6 +7,6 @@
     },
     "dependencies": [{
         "name": "Adafruit_NeoPixel",
-        "url": "https://github.com/adafruit/Adafruit_NeoPixel.git"
+        "url": "https://github.com/windoze/Adafruit_NeoPixel.git"
     }]
 }
